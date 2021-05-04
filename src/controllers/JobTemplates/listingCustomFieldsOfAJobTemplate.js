@@ -1,11 +1,8 @@
-const express = require('express')
-const router =  express.Router()
-
-//GET
-router.get('/job-custom-fields',(req,res,next)=>{
+exports.get =(req,res,next)=>{
     res.status(200).send({
             "id":"string",
             "label":"string",
+            "value":"string",
             "type":"select",
             "order":0,
             "required":true,
@@ -13,6 +10,4 @@ router.get('/job-custom-fields',(req,res,next)=>{
                 "string"
             ]
     })
-});
-
-module.exports = router;
+}

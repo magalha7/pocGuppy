@@ -1,8 +1,4 @@
-const express = require('express')
-const router = express.Router();
-
-//GET
-router.get('/:jobId/applications/:applicationId/hiring-information',(req,res,next)=>{
+exports.get = (req,res,next)=>{
     res.status(200).send({
         "hiringType":"employee_admission",
         "hiringDate":"2021-04-28T17:13:01.407Z",
@@ -10,6 +6,4 @@ router.get('/:jobId/applications/:applicationId/hiring-information',(req,res,nex
         "salary":0,
         "salaryCurrencyType":"R$"
     })
-});
-
-module.exports = router;
+}

@@ -1,8 +1,4 @@
-const express = require('express')
-const router = express.Router()
-
-//GET
-router.get('/:jobTemplateId/custom-fields',(req,res,next)=>{
+exports.get =(req,res,next)=>{
     res.status(200).send({
             "id":"string",
             "label":"string",
@@ -14,6 +10,4 @@ router.get('/:jobTemplateId/custom-fields',(req,res,next)=>{
                 "string"
             ]
     })
-});
-
-module.exports = router;
+}

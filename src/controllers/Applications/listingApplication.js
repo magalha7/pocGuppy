@@ -1,8 +1,4 @@
-const express = require("express");
-const router = express.Router();
-
-//GET
-router.get('/:jobId/applications',(req,res,next)=>{
+exports.get = (req,res,next)=>{
     const  jobId = req.params.jobId;
     res.status(200).send({
         "results":[{
@@ -107,6 +103,4 @@ router.get('/:jobId/applications',(req,res,next)=>{
             }],
         }]
     })
-})
-
-module.exports = router;
+}

@@ -1,8 +1,4 @@
-const express =  require('express')
-const router = express.Router()
-
-//GET
-router.get('/company-employees',(req,res,next)=>{
+exports.get = (req,res,next)=>{
     res.status(200).send({
             "id":0,
             "name":"string",
@@ -10,6 +6,4 @@ router.get('/company-employees',(req,res,next)=>{
             "identificationDocument":"string",
             "companyId":0
     })
-})
-
-module.exports = router;
+}

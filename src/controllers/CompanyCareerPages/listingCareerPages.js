@@ -1,8 +1,4 @@
-const express = require('express')
-const router = express.Router()
-
-//GET
-router.get('/career-pages',(req,res,next)=>{
+exports.get = (req,res,next)=>{
     res.status(200).send({
         "id":0,
         "subdomain":"string",
@@ -40,6 +36,4 @@ router.get('/career-pages',(req,res,next)=>{
         "createdAt":"2021-04-28T19:43:23.114Z",
         "updatedAt":"2021-04-28T19:43:23.114Z"
     })
-})
-
-module.exports = router;
+}

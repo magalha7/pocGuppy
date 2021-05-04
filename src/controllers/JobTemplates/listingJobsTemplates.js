@@ -1,8 +1,4 @@
-const express =  require('express')
-const router = express.Router()
-
-//GET
-router.get('/',(req,res,next)=>{
+exports.get = (req,res,next)=>{
     res.status(200).send({
             "id":100,
             "name":"string",
@@ -47,6 +43,4 @@ router.get('/',(req,res,next)=>{
                 ]
             }]
     })
-})
-
-module.exports = router;
+}

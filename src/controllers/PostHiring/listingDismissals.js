@@ -1,8 +1,4 @@
-const express =  require('express')
-const router = express.Router()
-
-//GET
-router.get('/dismissals',(req,res,next)=>{
+exports.get = (req,res,next)=>{
     res.status(200).send({
             "id":0,
             "applicationId":0,
@@ -13,6 +9,4 @@ router.get('/dismissals',(req,res,next)=>{
             "createdAt":"2021-05-03T17:46:16.700Z",
             "updatedAt":"2021-05-03T17:46:16.700Z"
     })
-})
-
-module.exports = router;
+}

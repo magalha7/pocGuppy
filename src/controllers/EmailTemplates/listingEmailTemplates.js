@@ -1,8 +1,4 @@
-const express =  require('express')
-const router = express.Router()
-
-//GET
-router.get('/email-templates',(req,res,next)=>{
+exports.get = (req,res,next)=>{
     res.status(200).send({
             "id":"string",
             "name":"string",
@@ -10,6 +6,4 @@ router.get('/email-templates',(req,res,next)=>{
             "body":"string",
             "type":"interview_scheduling"
     })
-})
-
-module.exports = router;
+}

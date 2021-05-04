@@ -1,8 +1,4 @@
-const express = require('express')
-const router = express.Router()
-
-//GET
-router.get('/:jobId/applications/:applicationId/rating-criteria',(req,res,next)=>{
+exports.get = (req,res,next)=>{
     res.status(200).send({
         "id":0,
         "name":"string",
@@ -18,6 +14,4 @@ router.get('/:jobId/applications/:applicationId/rating-criteria',(req,res,next)=
             "updatedAt":"2021-04-28T17:13:01.499Z"
         }]
     })
-});
-
-module.exports = router;
+}

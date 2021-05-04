@@ -1,8 +1,4 @@
-const express =  require('express')
-const router = express.Router()
-
-//GET
-router.get('/branches',(req,res,next)=>{
+exports.get = (req,res,next)=>{
     res.status(200).send({
             "id":0,
             "code":"string",
@@ -23,6 +19,4 @@ router.get('/branches',(req,res,next)=>{
             "createdAt":"2021-05-03T17:40:44.545Z",
             "updatedAt":"2021-05-03T17:40:44.545Z"
     })
-})
-
-module.exports = router;
+}
