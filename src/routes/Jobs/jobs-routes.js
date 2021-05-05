@@ -13,7 +13,7 @@ router.get('/jobs/:jobId/classifiers',controller_listingJobClassifiers.get)
 
 router.get('/jobs',controller_listingJobs.get);
 
-router.get('/jobs/:jobId/vacancies',controller_listingStepsOfAJob.get)
+router.get('/jobs/:jobId/steps',controller_listingStepsOfAJob.get)
 
 router.get('/jobs/:jobId/vacancies',controller_listingVacancyCodes.get)
 
